@@ -28,7 +28,6 @@ load("//closure/private:defs.bzl",
      "is_using_closure_library")
 
 def _impl(ctx):
-  print "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
   tsrcs, externs, tdata = collect_transitive_js_srcs(ctx)
   srcs = tsrcs + JS_FILE_TYPE.filter(ctx.files.srcs)
   externs += JS_FILE_TYPE.filter(ctx.files.externs)
@@ -98,7 +97,6 @@ def _impl(ctx):
                                       transitive_files=tsrcs + tdata))
 
 def _determine_check_language(language):
-  print "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
   if language == "ANY":
     return "ECMASCRIPT3"
   return language
