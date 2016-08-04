@@ -27,6 +27,8 @@ load("//closure/private:defs.bzl",
      "determine_js_language",
      "is_using_closure_library")
 
+print "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+
 def _impl(ctx):
   tsrcs, externs, tdata = collect_transitive_js_srcs(ctx)
   srcs = tsrcs + JS_FILE_TYPE.filter(ctx.files.srcs)
