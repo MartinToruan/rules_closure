@@ -14,6 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+print "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
 load("//closure/compiler:closure_js_binary.bzl", "closure_js_binary")
 load("//closure/compiler:closure_js_deps.bzl", "closure_js_deps")
 load("//closure/compiler:closure_js_library.bzl", "closure_js_library")
