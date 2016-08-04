@@ -124,6 +124,6 @@ closure_js_library = rule(
         "_closure_library_deps": CLOSURE_LIBRARY_DEPS_ATTR,
     },
     outputs={
-        "provided": "%{name}-provided.txt",
+        "provided": "%{name}-providedKristopel.txt",
         "stderr": "%{name}-stderr.txt",
     })
