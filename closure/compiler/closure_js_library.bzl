@@ -40,6 +40,7 @@ def _impl(ctx):
       fail("no_closure_library is pointless when the Closure Library is " +
            "already part of the transitive closure")
   inputs = []
+  println ctx.outputs.provided.path
   args = ["--output=%s" % ctx.outputs.provided.path,
           "--output_errors=%s" % ctx.outputs.stderr.path,
           "--label=%s" % ctx.label,
